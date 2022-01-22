@@ -1,0 +1,53 @@
+html,
+head {
+  background: white;
+}
+
+.mama {
+  color: black;
+  /* add this animation */
+  /* animation-name: mymove;
+  animation-duration: 4s; */
+  animation: mymove 5s;
+  font-size: 60px;
+}
+
+/* add a  keyframe animation */
+@keyframes mymove {
+  from {
+    opacity: 0;
+    font-size: 20px;
+  }
+  to {
+    opacity: 1;
+    font-size: 60px;
+  }
+}
+
+.name {
+  margin-left: 0px;
+  animation: anim 8s infinite;
+}
+
+@keyframes anim {
+  from {
+    margin-left: 500px;
+  }
+  to {
+    margin-left: 1100px;
+  }
+}
+
+/* make a button */
+
+.button {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
