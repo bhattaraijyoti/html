@@ -1,31 +1,33 @@
 html,
 head {
-  background: white;
+  background: rgb(58, 58, 58);
 }
 
 .mama {
-  color: black;
+  color: rgb(253, 254, 255);
   /* add this animation */
   /* animation-name: mymove;
   animation-duration: 4s; */
-  animation: mymove 5s;
+  animation: mymove 2s;
   font-size: 60px;
+
+  text-shadow: 5px 5px 5px rgb(148, 28, 28);
 }
 
 /* add a  keyframe animation */
 @keyframes mymove {
   from {
-    opacity: 0;
-    font-size: 20px;
+    opacity: 0px;
+    font-size: 0px;
   }
   to {
-    opacity: 1;
+    /* opacity: 0; */
     font-size: 60px;
   }
 }
 
 .name {
-  margin-left: 0px;
+  margin-left: 200px;
   animation: anim 8s infinite;
 }
 
@@ -38,16 +40,24 @@ head {
   }
 }
 
-
-
 .button {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
+  background-color: rgb(148, 28, 28);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(148, 28, 28);
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
+.button:hover {
+  box-shadow: 0px 0px 10px rgb(28, 110, 148);
+}
+
+.menu {
 }
